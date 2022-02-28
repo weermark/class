@@ -2,6 +2,25 @@
 #include <iostream>
 #include <cstdlib>
 
+namespace test{
+    int cout = 3;
+}
+
+
+int main(){
+    std::cout << test::cout;
+    
+    return 0;
+}
+```
+
+<br/>
+
+
+```c++
+#include <iostream>
+#include <cstdlib>
+
 using namespace std;
 
 int main(){
@@ -12,3 +31,5 @@ int main(){
     return 0;
 }
 ```
+
+
