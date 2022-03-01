@@ -1,6 +1,27 @@
 ```c++
 #include <iostream>
 #include <cstdlib>
+#include <climits>
+using namespace std;
+
+int main(){
+	int a = INT_MAX;
+	cout << a << ' ' << a+1 << endl;
+
+	unsigned int b = INT_MAX;
+	cout << b << ' ' << b+1 << endl;
+	
+	unsigned int c = UINT_MAX;
+	cout << c << ' ' << c+1;
+}
+```
+
+<br/>
+
+
+```c++
+#include <iostream>
+#include <cstdlib>
 #include <windows.h>
 
 using namespace std;
