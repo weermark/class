@@ -38,6 +38,42 @@ int main(){
 }
 ```
 
+<br>
+
+```c++
+#include <iostream>
+#include <cstdlib>
+#include <climits>
+#include <bitset>
+using namespace std;
+
+int main(){
+	unsigned int a = UINT_MAX;
+	bitset<32>bit(a);
+	cout << bit << " dec= "<< a << endl;
+	bitset<32>bit1(a+1);
+	cout << bit1 << " dec= " << a+1 << endl;
+}
+```
+
+<br>
+
+```c++
+#include <iostream>
+#include <cstdlib>
+#include <climits>
+#include <bitset>
+using namespace std;
+
+int main(){
+	int a = INT_MAX;
+	bitset<32>bit(a);
+	cout << bit << " dec= "<< a << endl;
+	bitset<32>bit1(a+1);
+	cout << bit1 << " dec= " << a+1 << endl;
+}
+```
+
 <br/>
 
 ```c++
@@ -103,6 +139,34 @@ int main(){
 
 <br>
 
+```c++
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+int main(){
+    int a, b, c;
+    cout << "input1: ";
+    cin >> a;
+    cout << "input2: ";
+    cin >> b;
+    cout << "input3: ";
+    cin >> c;
+    cout << "\nresult1:" << endl; 
+    cout << a;
+    
+    cout << "\nresult2: " << endl;
+    cout << b;
+    
+    cout << "\nresult3: " << endl;
+    cout << c;
+
+    return 0;
+}
+```
+
+<br>
 
 ```c++
 #include <iostream>
