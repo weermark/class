@@ -1,4 +1,26 @@
 ```c++
+/*
+ * 作者: 王小明						
+ * 日期: 2022/03/02						
+ * 作品: 輸出Hello world			
+*/
+
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+int main(){
+	// store the string "Hello world"
+	string s = "Hello world";
+	cout << s;
+}
+```
+
+<br>
+
+
+```c++
 #include <iostream>
 #include <cstdlib>
 #include <climits>
@@ -18,6 +40,21 @@ int main(){
 
 <br/>
 
+```c++
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+int main(){
+	cout << "\\" << endl;
+	cout << "\'" << endl;
+	cout << "\"" << endl;
+	
+}
+```
+
+<br>
 
 ```c++
 #include <iostream>
@@ -55,6 +92,21 @@ int main(){
 ```c++
 #include <iostream>
 #include <cstdlib>
+
+using namespace std;
+
+int main(){
+	string s = "C:\\Users\\Default";
+	cout << s;
+}
+```
+
+<br>
+
+
+```c++
+#include <iostream>
+#include <cstdlib>
 using namespace std;
 
 int main(){
@@ -66,23 +118,4 @@ int main(){
 	}
 	return 0;
 }
-
-```
-
-<br/>
-
-```c++
-
-```
-
-<br/>
-
-```c++
-
-```
-
-<br/>
-
-```c++
-
 ```
