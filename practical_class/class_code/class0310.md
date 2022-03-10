@@ -34,3 +34,7 @@ int main(){
     cout << max;
 }
 ```
+
+<br>
+
+[其餘程式碼連結](https://gist.github.com/bibo2001/6563aa6f6b84a82d88305b47c42ea1e9)
