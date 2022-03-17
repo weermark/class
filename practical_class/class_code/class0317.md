@@ -112,22 +112,26 @@ int main(){
 using namespace std;
 
 int main(){
-	int i = 2;
-	int time = 1;
-	int stop = 5;
-	while(time <= 20){
-		i++;
-		if(i % 3 == 0 || i % 5 == 0){
-			if(time == stop){
-				cout << endl;
-				stop += 5;
-				continue;
-			}
-			else{
-				cout << "time" << time << ": " << i << endl;
-				time++;
-			}
+	int num = 18;
+	int time = 3;
+	while(time){
+		int a;
+		cout << "please enter: ";
+		cin >> a; 
+		if(a != num){
+			cout << "wrong\n";
+		}
+		else if(a == num){
+			cout << "success!";
+			break;
+		}
+		
+		if(--time == 0){
+			cout << "fail";
+			break;
 		}
 	}
+	
+	return 0;
 }
 ```
