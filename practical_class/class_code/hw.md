@@ -131,16 +131,28 @@ int main(){
 teacher hw1
 ```c++
 #include <iostream>
-#include <cstdlib>
 #include <windows.h>
-
 using namespace std;
-
 int main(){
-	cout << "**\b\b";
-	while(1){
-		Sleep(250);
-		cout << "  **\b\b";
+	for (int i = 0; i <= 4; ++i )
+  	{
+    	for (int j = 0; j <= 39; ++j )
+    	{
+	    	cout << "  **";
+	    	cout << "\b\b";
+	      //v3 = std::operator<<<std::char_traits<char>>(refptr__ZSt4cout, "  **");
+	      //v4 = std::operator<<<std::char_traits<char>>(v3, 8i64);
+	      //std::operator<<<std::char_traits<char>>(v4, 8i64);
+	       Sleep(400);
+	    }
+	    cout << "  " <<  endl;
+	    //std::operator<<<std::char_traits<char>>(refptr__ZSt4cout, "  ");
+	    //refptr__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_(refptr__ZSt4cout);
 	}
+	  system("pause");
+	  return 0;
 }
+
+
+
 ```
