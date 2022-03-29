@@ -1,5 +1,3 @@
-
-
 ```c++
 #include <iostream>
 #include <cstdlib>
@@ -24,3 +22,7 @@ int main(){
 	}
 }
 ```
+
+<br>
+
+[其他程式碼](https://gist.github.com/bibo2001/9f2d42c26d29e85459ae942873b7a69e)
