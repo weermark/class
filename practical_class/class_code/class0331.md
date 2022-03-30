@@ -42,6 +42,25 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void swap(int a, int b){
+	int tmp = a;
+	a = b;
+	b = tmp;
+	cout << "in func: " << a << endl;
+}
+
+int main(){
+	int a = 5, b = 3;
+	swap(a, b);
+	cout << "in main: " << a; 
+}
+```
+
+
+```c++
+#include <iostream>
+using namespace std;
+
 int min(int a, int b){
 	return(a < b ? a : b);
 }
