@@ -1,0 +1,27 @@
+﻿@*@@model prjMid.Models.Count*@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Prog1</title>
+</head>
+<body>
+    <form method="post" action="@Url.Action("Prog1")">
+        <div> 開始:<input type="text" name="Start" value="@ViewBag.Start" /> </div>
+        <div> 結束:<input type="text" name="End" value="@ViewBag.End" /> </div>
+        <div> 間隔:<input type="text" name="Interval" value="@ViewBag.Interval" /> </div>
+        <div><input type="submit" value="計算" /></div>
+    </form>
+    <p>
+        @if(@ViewBag != null)
+        {
+            @Html.Raw(@ViewBag.Str);
+        }
+    </p>
+</body>
+</html>
