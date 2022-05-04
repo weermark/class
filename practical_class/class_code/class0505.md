@@ -83,6 +83,23 @@ int main(){
 
 ```c++
 #include <iostream>
+#include <sstream>
+using namespace std;
+
+int main(){
+    int val;
+    while(cin >> val){
+        
+        if(cin.get() == '\n')   break;
+    }
+    // do{
+    //     cin >> val;
+    // }while(cin.get() != '\n');
+}
+```
+
+```c++
+#include <iostream>
 using namespace std;
 
 int main(){
