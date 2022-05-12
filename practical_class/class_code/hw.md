@@ -134,8 +134,8 @@ teacher hw1
 #include <windows.h>
 using namespace std;
 int main(){
-	for (int i = 0; i <= 4; ++i )
-  	{
+for (int i = 0; i <= 4; ++i )
+{
     	for (int j = 0; j <= 39; ++j )
     	{
 	    	cout << "  **";
@@ -152,7 +152,5 @@ int main(){
 	  system("pause");
 	  return 0;
 }
-
-
-
 ```
+
