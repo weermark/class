@@ -1,4 +1,4 @@
-hw1
+## hw1
 
 寫法一
 ```c++
@@ -128,7 +128,7 @@ int main(){
 }
 ```
 
-teacher hw1
+## teacher hw1
 ```c++
 #include <iostream>
 #include <windows.h>
@@ -149,8 +149,42 @@ for (int i = 0; i <= 4; ++i )
 	    //std::operator<<<std::char_traits<char>>(refptr__ZSt4cout, "  ");
 	    //refptr__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_(refptr__ZSt4cout);
 	}
-	  system("pause");
-	  return 0;
+    system("pause");
+    return 0;
 }
 ```
 
+## hw2
+
+```c++
+#include<iostream>
+#include<cstdlib>
+
+using namespace std;
+
+void solidsquare (int side, char c){
+	for(int i = 0 ; i < side; i++){
+		for(int j = 0 ; j < side; j++){
+            cout << c ;
+        }
+	    cout << endl ;
+    }
+}
+
+int main(){
+	int side1 , side2;
+	char c1 , c2;
+	cout << "Integer1:";
+	cin >> side1;
+	cout << "Char1:";
+	cin >> c1;
+	cout << "Integer2:";
+	cin >> side2;
+	cout << "Char2:";
+	cin >> c2;
+	cout << "Result1:" << endl;
+	solidsquare(side1, c1);
+	cout << "Result2:" << endl;
+	solidsquare(side2, c2);
+} 
+```
