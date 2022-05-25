@@ -188,3 +188,74 @@ int main(){
 	solidsquare(side2, c2);
 } 
 ```
+
+## hw3
+
+```c++
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+void array(int a[], int size){
+	for(int i = 0; i < size; i++){
+		cout << *(a + i) << ' ';
+	}
+	cout << endl;
+}
+
+void reverse(int a[], int size){
+	for(int i = size - 1; i >= 0; i--){
+		cout << *(a + i) << ' ';
+	}
+	cout << endl;
+}
+
+void arrayEven(int a[], int size){
+	for(int i = 1; i < size; i++){
+		if(i % 2 == 0){
+			cout << *(a + i) << ' ';
+		}
+	}
+	cout << endl;
+}
+
+void arraySame(int a[], int size){
+	for(int i = 0; i < size; i++){
+		if(*(a + i) == i){
+			cout << *(a + i) << ' ';
+		}
+	}
+	cout << endl;
+}
+
+void min(int a[], int size){
+	int min = 0;
+	for(int i = 0; i < size; i++){
+		if(*(a + min) > *(a + i)){
+			min = i;
+		}
+	}
+	cout << min << endl;
+}
+
+
+int main(){
+	int a[] = {3,2,1,6,4};
+	int size = sizeof(a) / sizeof(a[0]);
+	cout << "Array: ";
+	array(a, size);
+
+	cout << "Reverse: ";
+	reverse(a, size);
+
+	cout << "Arrayeven: ";
+	arrayEven(a, size);
+
+	cout << "Arraysame: ";
+	arraySame(a, size);
+	
+	cout << "Min: ";
+	min(a, size);
+}
+```

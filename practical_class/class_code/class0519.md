@@ -133,3 +133,27 @@ int main(){
 	cout << v[0] << endl;			// 輸出 v[0]
 }
 ```
+
+```c++
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+int main()
+{
+	int vali = 5;
+	int& refi = vali;
+	int* ptri = &a;
+
+	cout << vali;	// vali的值
+	cout << &vali;	// vali的位址
+
+	cout << refi;	// refi的值(等同vali的值)
+	cout << &refi;	// refi的位址(等同vali的位址)
+	// refi === vali
+	cout << ptri;	// ptri的值(等同vali的位址)
+	cout << &ptri;	// ptri的位址(變數ptri本身的位址)
+	cout << *ptri;	// ptri所指向的位址的值(vali的值)
+}
+```
